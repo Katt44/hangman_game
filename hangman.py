@@ -72,10 +72,26 @@ def get_random_word(word_list):
 
 
 def display_board():
-	pass
+	print HANGMAN_PICS[len(missed_letters)]
+	print 'Missed letters: '
+	blanks = '_' * len(secret_word)
+
+	for i in range(len(secret_word)):
+		if secret_word[i] in correct_letters
+			blanks = blanks[:i] + secret_word[i] + blanks[i+1:]
+
+	for letter in blanks
+		print letter + " "
+
+
 def get_guess():
 	pass
 def play_again():
 	pass
 
-
+#calls	
+print "H A N G M A N"
+missed_letters = " "
+correct_letters = " "
+secret_word = get_random_word(words)
+game_is_done = False
