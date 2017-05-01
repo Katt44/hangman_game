@@ -1,6 +1,6 @@
 import random
 
-
+# Using invent your own computer games with python by  al sweigart
 
 '''
 Pseudo Code:
@@ -61,11 +61,16 @@ HANGMAN_PICS = [
 
 ]
 
+words = "cat kitty meowmeow kitten tiger lion gato fatty fuzzball".split()
+
 
 # Functions
 
-def get_random_word():
-	pass
+def get_random_word(word_list):
+	word_index = random.randint(0, len(word_list) - 1) # what does this mean?
+	return word_list[word_index]
+
+
 def display_board():
 	pass
 def get_guess():
@@ -73,4 +78,4 @@ def get_guess():
 def play_again():
 	pass
 
-# Calls
+
